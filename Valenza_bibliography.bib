@@ -1,4 +1,3 @@
-% Encoding: UTF-8
 @InProceedings{2015Crisis,
   author    = {Cataldo Basile and Daniele Canavese and Antonio Lioy and Fulvio Valenza},
   booktitle = {Proceedings of the 9th International Conference of Risks and Security of Internet and Systems (CRiSIS 2014)},
@@ -165,6 +164,7 @@ abstract={Two emerging architectural paradigms, i.e., Software Defined Networkin
   keywords={VPN,  Policy Analysis},
   url       = {https://iris.polito.it/retrieve/handle/11583/2673838/426540/2017TNET_author.pdf},
  }
+
  
  @Article{2017CAEE,
   author    = {Cataldo Basile and Daniele Canavese and Christian Pitscheider and Antonio Lioy and Fulvio Valenza},
@@ -177,6 +177,27 @@ abstract={Two emerging architectural paradigms, i.e., Software Defined Networkin
   abstract={Evaluating if a computer network only permits allowed business operations without transmitting unwanted or malicious traffic is a crucial security task. Reachability analysis – the process that evaluates allowed communications – is a tool useful not only to discover security issues but also to identify network misconfigurations. This paper presents a novel approach to quantify network reachability based on the concept of equivalent firewall – a fictitious device, ideally connected directly to the communicating peers and whose policy summarizes the network behaviour between them – that can be queried to derive reachability information. We build equivalent firewalls by using a mathematical model that supports a large variety of network security controls (like NAT, NAPT, tunnels and filters up to the application layer) and allows an accurate analysis. The presented approach is efficient and highly scalable, as confirmed by tests with a large corporate network as well as synthetic networks. © 2017 Elsevier Ltd},
   keywords={Policy Verification, Reachability Verification},
   url = {https://iris.polito.it/retrieve/handle/11583/2671778/426546/2017CAEE_author.pdf}
+}
+
+@Article{2018JISIS,
+  author    = {Fulvio Valenza and Antonio Lioy},
+  doi       = {10.22667/JISIS.2018.05.31.033},
+  journal   = {J. of Internet Services and Information Security (JISIS)},
+  number    = {2},
+  pages     = {33--47},
+  title     = {User-oriented Network Security Policy Specification},
+  volume    = {8},
+  year      = {2018},
+  abstract={The configuration and management of security controls and applications is complex and not well
+understood by the majority of end-users (i.e. it typically requires specific skills). The security policy
+language simplifies this task and reduces the number of errors and anomalies. This paper proposes the
+specification of the two mechanisms for defining user’s security policies, namely High-level Security
+Policy Language (HSPL) and Medium-level Security Policy Language (MSPL). HSPL is suitable for
+expressing the protection requirements of typical non-technical users, while MSPL is a lower-level
+abstraction useful for expressing specific configurations of security controls in a generic format (as
+such it is more appealing for technical users).© 2018, Innovative Information Science and Technology Research Group.},
+    keywords={Policy Refinement, Security Automation},
+  url = {https://iris.polito.it/retrieve/e384c430-ba6d-d4b2-e053-9f05fe0a1d67/jisis-2018-vol8-no2-03.pdf}
 }
 
 @Article{2018JOWUA,
@@ -328,28 +349,14 @@ keywords={Industrial Network Systems,  Reachability Verification},
 @InProceedings{2020NOMS_VEREFOO,
   author    = {Daniele Bringhenti and Guido Marchetto and Riccardo Sisto and Fulvio Valenza and Jalolliddin Yusupov},
   booktitle = {Proceedings of the {IEEE/IFIP} Network Operations and Management Symposium ({NOMS} 2020)},
-  doi       = {10.1109/NOMS47738.2020.9110402},
-  pages     = {1--7},
-  publisher = {{IEEE}},
   title     = {Automated optimal firewall orchestration and configuration in virtualized networks},
   year      = {2020},
-  url       = {https://iris.polito.it/retrieve/handle/11583/2837546/426876/2020NOMS_VEREFOO_author.pdf},
-  abstract={Emerging technologies such as Software-Defined Networking and Network Functions Virtualization are making the definition and configuration of network services more dynamic, thus making automatic approaches that can replace manual and error-prone tasks more feasible. In view of these considerations, this paper proposes a novel methodology to automatically compute the optimal allocation scheme and configuration of virtual firewalls within a user-defined network service graph subject to a corresponding set of security requirements. The presented framework adopts a formal approach based on the solution of a weighted partial MaxSMT problem, which also provides good confidence about the solution correctness. A prototype implementation of the proposed approach based on the z3 solver has been used for validation, showing the feasibility of the approach for problem instances requiring tens of virtual firewalls and similar numbers of security requirements. © 2020 IEEE.},
-    keywords={Firewall,Policy Refinement,Security Automation},
-
-}
-
-@InProceedings{2020NetSoft,
-  author    = {Daniele Bringhenti and Guido Marchetto and Riccardo Sisto and Fulvio Valenza and Jalolliddin Yusupov},
-  booktitle = {Proceedings of the 6th {IEEE} Conference on Network Softwarization (NetSoft 2020)},
-  doi       = {10.1109/NetSoft48620.2020.9165434},
-  pages     = {473--478},
+  pages     = {1--7},
   publisher = {{IEEE}},
-  title     = {Introducing programmability and automation in the synthesis of virtual firewall rules},
-  year      = {2020},
-  abstract={The rise of new forms of cyber-threats is mostly due to the extensive use of virtualization paradigms and the increasing adoption of automation in the software life-cycle. To address these challenges we propose an innovative framework that leverages the intrinsic programmability of the cloud and software-defined infrastructures to improve the effectiveness and efficiency of reaction mechanisms. In this paper, we present our contributions with a demonstrative use case in the context of Kubernetes. By means of this framework, developers of cybersecurity appliances will not have any more to care about how to react to events or to struggle to define any possible security tasks at design time. In addition, automatic firewall ruleset generation provided by our framework will mostly avoid human intervention, hence decreasing the time to carry out them and the likelihood of errors. We focus our discussions on technical challenges: definition of common actions at the policy level and their translation into configurations for the heterogeneous set of security functions by means of a use case. © 2020 IEEE.},
-  url       = {https://iris.polito.it/retrieve/handle/11583/2844332/391324/main.pdf},
-  keywords={Security Automation, Security Orchestration},
+  abstract  = {Emerging technologies such as Software-Defined Networking and Network Functions Virtualization are making the definition and configuration of network services more dynamic, thus making automatic approaches that can replace manual and error-prone tasks more feasible. In view of these considerations, this paper proposes a novel methodology to automatically compute the optimal allocation scheme and configuration of virtual firewalls within a user-defined network service graph subject to a corresponding set of security requirements. The presented framework adopts a formal approach based on the solution of a weighted partial MaxSMT problem, which also provides good confidence about the solution correctness. A prototype implementation of the proposed approach based on the z3 solver has been used for validation, showing the feasibility of the approach for problem instances requiring tens of virtual firewalls and similar numbers of security requirements. © 2020 IEEE.},
+  doi       = {10.1109/NOMS47738.2020.9110402},
+  keywords  = {Firewall, Policy Refinement, Security Automation},
+  url       = {https://iris.polito.it/retrieve/handle/11583/2837546/426876/2020NOMS_VEREFOO_author.pdf},
 }
 
 @Article{2020JISIS,
@@ -367,19 +374,7 @@ keywords={Industrial Network Systems,  Reachability Verification},
 
 }
 
-@Article{2021TII,
-  author    = {Guido Marchetto and Riccardo Sisto and Fulvio Valenza and Jalolliddin Yusupov and Adlen Ksentini},
-  doi       = {10.1109/TII.2020.3002816},
-  journal   = {{IEEE} Transactions on Industrial Informatics},
-  number    = {2},
-  pages     = {1515--1525},
-  title     = {A Formal Approach to Verify Connectivity and Optimize {VNF} Placement in Industrial Networks},
-  volume    = {17},
-  year      = {2021},
-  keywords={Industrial Network Systems, VNF Placement,Reachability Verification},
-  url       = {https://iris.polito.it/retrieve/handle/11583/2853938/410825/09119174.pdf},
-  abstract={The increased flexibility and interconnectivity of modern industrial communication networks, obtained through the use of innovative technologies like network function virtualization and software-defined networking, require a secure and manageable framework to support the new communication and computing needs. To focus on these requirements, this article proposes a framework for reliable placement of services across physically separated locations, which offers both system optimization, in terms of latency and resource utilization, and connectivity policy enforcement to guarantee service reliability, safety, and security. This is achieved by exploiting a new approach to solve the virtual network embedding problem, using optimization modulo theories (MaxSMT), which allows the use of very expressive constraints. © 2020 IEEE.},
-}
+
 
 
 
@@ -440,28 +435,28 @@ keywords={In-vehicle Security},
 @InProceedings{2020NetSoft,
   author    = {Bringhenti, D. and Marchetto, G. and Sisto, R. and Valenza, F. and Yusupov, J.},
   booktitle = {Proceedings of the 6th {IEEE} Conference on Network Softwarization (NetSoft 2020)},
-  doi       = {10.1109/NetSoft48620.2020.9165434},
-  pages     = {473-478},
   title     = {Introducing programmability and automation in the synthesis of virtual firewall rules},
   year      = {2020},
+  pages     = {473-478},
   abstract  = {The rise of new forms of cyber-threats is mostly due to the extensive use of virtualization paradigms and the increasing adoption of automation in the software life-cycle. To address these challenges we propose an innovative framework that leverages the intrinsic programmability of the cloud and software-defined infrastructures to improve the effectiveness and efficiency of reaction mechanisms. In this paper, we present our contributions with a demonstrative use case in the context of Kubernetes. By means of this framework, developers of cybersecurity appliances will not have any more to care about how to react to events or to struggle to define any possible security tasks at design time. In addition, automatic firewall ruleset generation provided by our framework will mostly avoid human intervention, hence decreasing the time to carry out them and the likelihood of errors. We focus our discussions on technical challenges: definition of common actions at the policy level and their translation into configurations for the heterogeneous set of security functions by means of a use case. © 2020 IEEE.},
-  keywords  = {Firewall,Security Orchestration},
+  doi       = {10.1109/NetSoft48620.2020.9165434},
+  keywords  = {Firewall, Security Orchestration},
   url       = {https://iris.polito.it/retrieve/handle/11583/2844332/391324/main.pdf},
 }
 
-@ARTICLE{2021TNSM,
-  author={D. {Bringhenti} and G. {Marchetto} and R. {Sisto} and S. {Spinoso} and F. {Valenza} and J. {Yusupov}},
-  journal={IEEE Transactions on Network and Service Management}, 
-  title={Improving the Formal Verification of Reachability Policies in Virtualized Networks}, 
-  year={2021},
-  volume={18},
-  number={1},
-  pages={713-728},
-  doi={10.1109/TNSM.2020.3045781},
-  url={https://iris.polito.it/retrieve/handle/11583/2859052/435762/TNSM2021.pdf},
-abstract={Network Function Virtualization (NFV) and Software Defined Networking (SDN) are new emerging paradigms that changed the rules of networking, shifting the focus on dynamicity and programmability. In this new scenario, a very important and challenging task is to detect anomalies in the data plane, especially with the aid of suitable automated software tools. In particular, this operation must be performed within quite strict times, due to the high dynamism introduced by virtualization. In this article, we propose a new network modeling approach that enhances the performance of formal verification of reachability policies, checked by solving a Satisfiability Modulo Theories (SMT) problem. This performance improvement is motivated by the definition of function models that do not work on single packets, but on packet classes. Nonetheless, the modeling approach is comprehensive not only of stateless functions, but also stateful functions such as NATs and firewalls. The implementation of the proposed approach achieves high scalability in complex networked systems consisting of several heterogeneous functions.},
-  keywords={Reachability Verification, Policy Verification,Security Function Modeling}, 
-  }
+@Article{2021TNSM,
+  author   = {D. {Bringhenti} and G. {Marchetto} and R. {Sisto} and S. {Spinoso} and F. {Valenza} and J. {Yusupov}},
+  journal  = {IEEE Transactions on Network and Service Management},
+  title    = {Improving the Formal Verification of Reachability Policies in Virtualized Networks},
+  year     = {2021},
+  number   = {1},
+  pages    = {713-728},
+  volume   = {18},
+  abstract = {Network Function Virtualization (NFV) and Software Defined Networking (SDN) are new emerging paradigms that changed the rules of networking, shifting the focus on dynamicity and programmability. In this new scenario, a very important and challenging task is to detect anomalies in the data plane, especially with the aid of suitable automated software tools. In particular, this operation must be performed within quite strict times, due to the high dynamism introduced by virtualization. In this article, we propose a new network modeling approach that enhances the performance of formal verification of reachability policies, checked by solving a Satisfiability Modulo Theories (SMT) problem. This performance improvement is motivated by the definition of function models that do not work on single packets, but on packet classes. Nonetheless, the modeling approach is comprehensive not only of stateless functions, but also stateful functions such as NATs and firewalls. The implementation of the proposed approach achieves high scalability in complex networked systems consisting of several heterogeneous functions.},
+  doi      = {10.1109/TNSM.2020.3045781},
+  keywords = {Reachability Verification, Policy Verification, Security Function Modeling},
+  url      = {https://iris.polito.it/retrieve/handle/11583/2859052/435762/TNSM2021.pdf},
+}
 
 @article{ValenzaRS21,
   author    = {Fulvio Valenza and
@@ -479,8 +474,150 @@ abstract={Network Function Virtualization (NFV) and Software Defined Networking 
    keywords  = {Security Orchestration, Security Automation}
 }
 
+@InProceedings{2021Netsoft,
+  author    = {Daniele Bringhenti and
+               Guido Marchetto and
+               Riccardo Sisto and
+               Fulvio Valenza},
+  title     = {A novel approach for security function graph configuration and deployment},
+  booktitle = {7th {IEEE} International Conference on Network Softwarization, NetSoft
+               2021, Tokyo, Japan, June 28 - July 2, 2021},
+  pages     = {457--463},
+  publisher = {{IEEE}},
+  year      = {2021},
+  url       = {https://iris.polito.it/retrieve/handle/11583/2921763/513222/main.pdf},
+  doi       = {10.1109/NetSoft51509.2021.9492654},
+    abstract={Network virtualization increased the versatility in
+enforcing security protection, by easing the development of
+new security function implementations. However, the drawback
+of this opportunity is that a security provider, in charge of
+configuring and deploying a security function graph, has to
+choose the best virtual security functions among a pool so large
+that makes manual decisions unfeasible. In light of this problem,
+the paper proposes a novel approach for synthesizing virtual
+security services by introducing the functionality abstraction.
+This new level of abstraction allows to work in the virtual level
+without considering the different function implementations, with
+the objective to postpone the function selection jointly with the
+deployment, after the configuration of the virtual graph. This
+novelty enables to optimize the function selection when the pool
+of available functions is very large. A framework supporting
+this approach has been implemented and it showed adequate
+scalability for the requirements of modern virtual networks},
+  keywords={Security Function Modeling,Policy Refinement,Security Automation}, 
+}
 
+@Article{2021TII,
+  author   = {Guido Marchetto and Riccardo Sisto and Fulvio Valenza and Jalolliddin Yusupov and Adlen Ksentini},
+  journal  = {{IEEE} Transactions on Industrial Informatics},
+  title    = {A Formal Approach to Verify Connectivity and Optimize {VNF} Placement in Industrial Networks},
+  year     = {2021},
+  number   = {2},
+  pages    = {1515--1525},
+  volume   = {17},
+  abstract = {The increased flexibility and interconnectivity of modern industrial communication networks, obtained through the use of innovative technologies like network function virtualization and software-defined networking, require a secure and manageable framework to support the new communication and computing needs. To focus on these requirements, this article proposes a framework for reliable placement of services across physically separated locations, which offers both system optimization, in terms of latency and resource utilization, and connectivity policy enforcement to guarantee service reliability, safety, and security. This is achieved by exploiting a new approach to solve the virtual network embedding problem, using optimization modulo theories (MaxSMT), which allows the use of very expressive constraints. © 2020 IEEE.},
+  doi      = {10.1109/TII.2020.3002816},
+  keywords = {Industrial Network Systems, VNF Placement, Reachability Verification},
+  url      = {https://iris.polito.it/retrieve/handle/11583/2853938/410825/09119174.pdf},
+}
 
+@article{2022ACC,
+  author    = {Daniele Bringhenti and Guido Marchetto and Riccardo Sisto and
+               Fulvio Valenza and Jalolliddin Yusupov},
+  title     = {Automated firewall configuration in virtual networks},
+  journal   = {{IEEE} Transactions on Dependable and Secure Computing},
+  year      = {2022},
+  url       = {https://iris.polito.it/retrieve/handle/11583/2958744/571845/TDSC2022.pdf},
+  doi       = {10.1109/TDSC.2022.3160293},
+  abstract = {The configuration of security functions in computer
+networks is still typically performed manually, which likely
+leads to security breaches and long re-configuration times.
+This problem is exacerbated for modern networks based on
+network virtualization, because their complexity and dynamics
+make a correct manual configuration practically unfeasible. This
+article focuses on packet filters, i.e., the most common firewall
+technology used in computer networks, and it proposes a new
+methodology to automatically define the allocation scheme and
+configuration of packet filters in the logical topology of a virtual
+network. The proposed method is based on solving a carefully
+designed partial weighted Maximum Satisfiability Modulo Theories problem 
+by means of a state of the art solver. This approach
+formally guarantees the correctness of the solution, i.e., that
+all security requirements are satisfied, and it minimizes the
+number of needed firewalls and firewall rules. This methodology
+is extensively evaluated using different metrics and tests on both
+synthetic and real use cases, and compared to the state-of-the-art
+solutions, showing its superiority. © 2022 IEEE.},   
+  note      = {in press}},
+  keywords  = {Firewall,Policy Refinement,Security Automation}, 	
+}
 
+@article{2022CN,
+  author    = {Daniele Bringhenti and Jalolliddin Yusupov and Alejandro Molina Zarca and Fulvio Valenza and Riccardo Sisto and Jorge Bernal Bernabe and Antonio Skarmeta},
+  title     = {Automatic, verifiable and optimized policy-based security enforcement for SDN-aware IoT networks},
+  journal   = {Elsevier Computer Networks},
+  volume    = {213},
+  pages     = {109--123},
+  year      = {2022},
+  url       = {https://iris.polito.it/retrieve/handle/11583/2968670/593984/AuthorManuscript.pdf},
+  doi       = {10.1016/j.comnet.2022.109123},
+  abstract={The pervasiveness of Internet of Things (IoT) has made the management of computer networks more troublesome. The
+softwarized control provided by Software-Defined Networking (SDN) is not sufficient to overcome the problems raising in
+this context. An increasing number of attacks can, in fact, occur in SDN-aware IoT networks if the security configuration
+enforced on the SDN switches is manually computed and not formally verified. To mitigate this problem, this paper
+proposes a novel methodology which leverages Maximum Satisfiability Modulo Theories (MaxSMT) to automatically
+compute a formally correct and optimized allocation scheme and configuration of SDN switches by refining security
+policies, user-defined or derived from detected attacks. This mechanism is compliant with the main characteristics of
+virtualized IoT-based networks, such as the simultaneous presence of numerous interconnected devices and strict latency
+requirements. The feasibility and the performance of the framework developed to implement this methodology have
+been validated in a realistic use case.},
+  keywords={Policy Refinement,Security Automation}, 	
+}
+
+@article{2022ACC,
+  author    = {Daniele Bringhenti and
+               Fulvio Valenza},
+  title     = {A Twofold Model for {VNF} Embedding and Time-Sensitive Network Flow
+               Scheduling},
+  journal   = {{IEEE} Access},
+  volume    = {10},
+  pages     = {44384--44399},
+  year      = {2022},
+  url       = {https://iris.polito.it/retrieve/handle/11583/2962049/579649/OnlineVersion.pdf},
+  doi       = {10.1109/ACCESS.2022.3169863},
+  abstract={The revolution that Industrial Control Systems are undergoing is reshaping the traditional
+network management and it is introducing new challenges. After the advent of network virtualization,
+an enhanced level of automation has been required to cope with the safety-critical mission of industrial
+systems and strict requirements for end-to-end latency. In the literature, there have been attempts to
+automatically solve two strictly interconnected problems for the management of virtual industrial networks:
+the Virtual Network Function embedding and the time-sensitive flow scheduling problems. However, dealing
+with these problems separately can lead to unoptimized results, or in the worst case to situations where the
+latency requirements cannot be satisfied because of a poorly chosen function embedding. In light of these
+motivations, this paper proposes a formal approach to jointly solve the two problems through an Optimization
+Satisfiability Modulo Theories formulation. This choice also allows combining two vital features: a formal
+guarantee of the solution correctness and optimization targeting the minimization of the end-to-end delay for
+flow scheduling. The feasibility of the proposed approach has been validated by implementing a prototype
+framework and experimentally testing it on realistic use cases.},
+  keywords={Security Function Modeling,Policy Verification}, 	
+}
+
+@article{2022SEP,
+  author    = {Daniele Bringhenti and
+               Fulvio Valenza and
+               Cataldo Basile},
+  title     = {Toward Cybersecurity Personalization in Smart Homes},
+  journal   = {{IEEE} Secur. Priv.},
+  volume    = {20},
+  number    = {1},
+  pages     = {45--53},
+  year      = {2022},
+  url       = {https://iris.polito.it/retrieve/handle/11583/2927212/573382/IEEESP.pdf},
+  doi       = {10.1109/MSEC.2021.3117471},
+  abstract={Security personalization has become a critical need for smart homes in recent years. The current
+approaches cannot fully satisfy this requirement of user-centered security. We propose a user-friendly
+approach for the automatic configuration of home security solutions through policy-based management,
+minimizing human interventions, and improving security usability},
+  keywords={Policy Refinement,Security Automation}, 	
+}
 
 @Comment{jabref-meta: databaseType:bibtex;}
